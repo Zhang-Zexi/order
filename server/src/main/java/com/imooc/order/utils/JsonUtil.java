@@ -16,6 +16,7 @@ public class JsonUtil {
 
     /**
      * 转换为json字符串
+     *
      * @param object
      * @return
      */
@@ -30,6 +31,7 @@ public class JsonUtil {
 
     /**
      * json转对象
+     *
      * @param string
      * @param classType
      * @return
@@ -46,6 +48,7 @@ public class JsonUtil {
 
     /**
      * json转对象
+     *
      * @param string
      * @param typeReference
      * @return

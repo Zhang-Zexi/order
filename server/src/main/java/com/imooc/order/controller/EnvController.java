@@ -15,7 +15,7 @@ public class EnvController {
     private String env;
 
     @GetMapping("/print")
-    public String print(){
+    public String print() {
         return env;
     }
 

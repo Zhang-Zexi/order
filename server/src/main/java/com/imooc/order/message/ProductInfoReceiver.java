@@ -24,8 +24,9 @@ public class ProductInfoReceiver {
     @RabbitListener(queuesToDeclare = @Queue("productInfo"))
     public void process(String message) {
         //message => ProductInfoOutput
-        List<ProductInfoOutput> productInfoOutputList = (List<ProductInfoOutput>)JsonUtil.fromJson(message,
-                new TypeReference<List<ProductInfoOutput>>() {});
+        List<ProductInfoOutput> productInfoOutputList = (List<ProductInfoOutput>) JsonUtil.fromJson(message,
+                new TypeReference<List<ProductInfoOutput>>() {
+                });
         log.info("从队列【{}】接收到消息：{}", "productInfo", productInfoOutputList);
 
         //存储到redis中
