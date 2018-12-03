@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 //@EnableDiscoveryClient
 //@EnableCircuitBreaker
 @SpringCloudApplication
+@ComponentScan(basePackages = "com.imooc")
 public class OrderApplication {
 
     public static void main(String[] args) {

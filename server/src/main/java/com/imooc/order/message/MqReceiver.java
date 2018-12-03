@@ -1,6 +1,5 @@
 package com.imooc.order.message;
 
-import com.sun.xml.internal.ws.api.server.InstanceResolverAnnotation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.Exchange;
 import org.springframework.amqp.rabbit.annotation.Queue;
